@@ -1,0 +1,44 @@
+.button{
+    background-color: blueviolet;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    float: right;
+    
+  }
+.devambtn{
+  background-color: #3498db;
+  
+    position:relative;
+    float:right;
+}
+ 
+  .timer-container{
+      position: relative;
+      top: 0%;
+  }
+  .close-model{
+    position:relative;
+    float:right;
+  }
+  .baslik{
+    text-decoration-color: #544;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-modal{
+  background-color: #3498db;
+}
+  

@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ 
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px 5px 5px 5px;
+  
+  background: linear-gradient(
+    -30deg,
+    #03a9f4 0%,
+    #3a78b7 50%,
+    #262626 50%,
+    #607d8b 100%
+  );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.box {
+  position: relative;
+  padding: 50px;
+  width: 360px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+.box:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 15%,
+    transparent 85%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+.box .form {
+  position: relative;
+  width:900px;
+}
+.box .form h2 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.box .form .inputBx {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.box .form .inputBx input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  padding: 8px 10px;
+  padding-left: 35px;
+  border-radius: 6px;
+  color: #fff;
+  font: 16px;
+  font-weight: 300;
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.box .form .inputBx input::placeholder {
+  color: #fff;
+}
+.box .form .inputBx input[type="submit"] {
+  background: #fff;
+  color: #111;
+  max-width: 100px;
+  padding: 8px 10px;
+  box-shadow: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.box .form .inputBx .fa {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 26px;
+  color: #fff;
+  transform: scale(0.7);
+  filter: invert(1);
+}
+.remember {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.box .form p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.box .form a {
+  color: #fff;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.my-nav{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  }
+  
+  .carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.5);
+}
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+  .carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+  }  
+
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:0 10px 10px 0;}
+.carousel-caption{text-align:left; left:5%;}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+.banner-text h2{color:#fff; font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+.banner-text p{color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  padding: 0.9em 1.6em;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  border-radius: 12px;
+  padding: 10px;
+  
+  
+  
+ }
+ 
+ .btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(46, 46, 46);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+ }
+ /* glow */
+ .btn::before {
+  content: "";
+  background: linear-gradient(
+     45deg,
+     #FF0000, #002BFF, #FF00C8, #002BFF,
+       #FF0000, #002BFF, #FF00C8, #002BFF
+ );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+ }
+ 
+ @keyframes glowing {
+  0% {
+   background-position: 0 0;
+  }
+ 
+  50% {
+   background-position: 400% 0;
+  }
+ 
+  100% {
+   background-position: 0 0;
+  }
+ }
+ 
+ /* hover */
+ .btn:hover::before {
+  opacity: 1;
+ }
+ 
+ .btn:active:after {
+  background: transparent;
+ }
+ 
+ .btn:active {
+  color: #000;
+  font-weight: bold;
+ }
+
+.foo{
+  position: relative;
+  bottom: 8px;
+  top: 500px;
+  left: 30%;
+  font-size: 15px;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+.login {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login > form > input {
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color:#778;
+}
+
+.login > form > button {
+  line-height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  background-color:#778;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.login > form > button:hover {
+  opacity: 88%;
+}
+
+.login__register {
+  color:#778;
+  cursor: pointer;
+}
